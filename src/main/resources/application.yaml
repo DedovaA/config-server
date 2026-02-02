@@ -9,9 +9,9 @@ spring:
       server:
         native:
           # путь к папке, где файлы настроек
-          search-locations: file:///home/asya/IdeaProjects/my-configs/
+          search-locations: file:./central-configs/
   profiles:
-    active: native # Используем локальную файловую систему вместо Git
+    active: native # локальная файловая система вместо Git
 
 eureka:
   client:
