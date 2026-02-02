@@ -12,3 +12,8 @@ spring:
           search-locations: file:///home/asya/IdeaProjects/my-configs/
   profiles:
     active: native # Используем локальную файловую систему вместо Git
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ # Адрес сервера Eureka
