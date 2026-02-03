@@ -5,3 +5,5 @@ eureka:
       defaultZone: http://localhost:8761/eureka/ # Адрес сервера Eureka
   instance:
     prefer-ip-address: true # Чтобы в Eureka отображались IP-адреса, а не случайные ID контейнеров
+    lease-renewal-interval-in-seconds: 5 #как часто сервис шлет heartbeat серверу eureka (снижаем с 30 до 5 сек)
+    lease-expiration-duration-in-seconds: 10 #таймаут после кот. eureka решит, что сервис умер (снижаем с 90 до 10 сек)
